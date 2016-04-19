@@ -2,21 +2,73 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>jiugongge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>九宫格</title>
     <style type="text/css">
-        .squre{
-        height:1000px;
-        width:1000px;
-    }
 
-    .space{
-        background:orange;
-        height:300px;
-        width:300px;
-        border-radius:20px;
-        margin:10px;
-        float:left;
-    }</style>
+        /*.squre{
+            width:100%;
+            height: 100%;
+            background-color: black;
+            margin: 0 auto;
+        }*/
+
+
+
+        .squre{
+            background:black;
+            width:1000px;
+            margin: 0 auto;
+        }
+
+        .space{
+            background:orange;
+            height: 300px;
+            width:30%;
+            border-radius:20px;
+            margin:10px;
+            float:left;
+        }
+
+
+        /* css 注释说明：设置了浏览器宽度不小于1201px时 abc 显示1200px宽度 */
+
+        @media screen and (min-height: 1200px) {
+            .space {
+                background: orange;
+                height: 1200px;
+                width: 30%;
+                border-radius: 20px;
+                margin:10px;
+                float: left;
+            }
+        }
+        /* 设置了浏览器宽度不大于1200px时 abc 显示900px宽度 */
+
+        @media screen and (min-height: 900px) {
+            .space {
+                background: orange;
+                height: 900px;
+                width: 30%;
+                border-radius: 20px;
+                margin:10px;
+                float: left;
+            }
+        }
+        /* 设置了浏览器宽度不大于900px时 abc 显示200px宽度 */
+
+            @media screen and (min-height: 500px) {
+                .space {
+                    background: orange;
+                    height: 500px;
+                    width: 30%;
+                    border-radius: 20px;
+                    margin:10px;
+                    float: left;
+                }
+            }
+
+    </style>
 </head>
 <body>
 <div class="squre">
